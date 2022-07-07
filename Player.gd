@@ -4,7 +4,7 @@ var started = false
 export (int) var speed = 200
 var velocity = Vector2()
 
-#Test message Adding additional Text Here. 
+#Test message Adding additional. 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 func _physics_process(_delta):
