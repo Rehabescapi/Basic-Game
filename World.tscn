@@ -1,14 +1,21 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Player.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Squid.tscn" type="PackedScene" id=2]
 
 [node name="Node2D" type="Node2D"]
 
 [node name="KinematicBody2D" parent="." instance=ExtResource( 1 )]
+visible = false
 position = Vector2( 157, 78 )
 
 [node name="KinematicBody2D2" parent="." instance=ExtResource( 1 )]
+visible = false
 position = Vector2( 155, 196 )
 
 [node name="KinematicBody2D3" parent="." instance=ExtResource( 1 )]
+visible = false
 position = Vector2( 404, 148 )
+
+[node name="Area2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 196, 199 )

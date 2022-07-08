@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://art/playerGrey_walk2.png" type="Texture" id=1]
 [ext_resource path="res://art/playerGrey_walk1.png" type="Texture" id=2]
+[ext_resource path="res://Squid.gd" type="Script" id=3]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -19,8 +20,9 @@ animations = [ {
 [sub_resource type="CapsuleShape2D" id=2]
 radius = 54.0
 
-[node name="Area2D" type="Area2D"]
+[node name="Squid" type="Area2D"]
 scale = Vector2( 0.5, 0.5 )
+script = ExtResource( 3 )
 __meta__ = {
 "_edit_group_": true
 }
